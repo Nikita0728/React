@@ -5,13 +5,15 @@ import Main from  './Main'
 import Assignment from './classwork';
 import UseStateWithObject from './UseStateWithObject';
 import ClickCounter from './Day2/ClickCounter';
-
-
+import DisplayEnteredText from './Day2/DisplayEnteredText';
+import TodoList from './Day2/ToDoList';
+import GuessingGame from './Day2/GuessingGame';
+import Classwork2 from './Day2/Classwork2';
 function App() {
   return (
     <div className="App">
    
-     <ClickCounter/>
+     <Classwork2/>
     </div>
   );
 }

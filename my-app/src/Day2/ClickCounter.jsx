@@ -2,21 +2,16 @@ import React, { useState } from 'react';
 
 const ClickCounter = (props) => {
   // console.log(props)
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  const increment = (e) => {
-    setCount(count + e);
-    setButtonClicked(true);
-
-  };
-
-  const decrement = (e) => {
+  
+  const change = (e) => {
    if(count>=1)
-    {setCount(count - e)};
-    setButtonClicked(true);
-
-  };
+     {setCount(count + e)};
+     setButtonClicked(true);
+ 
+   };
 
   return (
     <div>
@@ -24,10 +19,10 @@ const ClickCounter = (props) => {
 
 
       <p>Count: {count}</p>
-      <button   onClick={()=>{increment(4)}}> 
+      <button   onClick={()=>{change(1)}}> 
       Increment
       </button>
-      <button onClick={()=>{decrement(2)}}>
+      <button onClick={()=>{change(-2)}}>
         Decrement
         </button>
 
